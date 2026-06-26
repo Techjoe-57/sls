@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" role="img" aria-label="Smart Life Solutions logo" style="width:100%;height:auto;">
+  <defs>
+    <style>
+      .brand {
+        font-family: 'Poppins', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        fill: #0B3A66;
+      }
+      .tag {
+        font-family: 'Poppins', 'Segoe UI', Roboto, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        fill: #0B3A66;
+      }
+    </style>
+  </defs>
+
+  <text x="20" y="65" class="brand">Smart Life</text>
+  <text x="20" y="95" class="tag">Solutions</text>
+</svg>

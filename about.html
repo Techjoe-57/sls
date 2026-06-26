@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About | SmartLife</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/about.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init("UkSAZDqrmMplp5IcO"); // Replace with your actual Public Key
+   })();
+   </script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h1><a href="index.html">smartlife.com</a></h1>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Dashboard</a>
+      <a href="about.html" class="active">About</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="mentorship.html">Mentorship</a>
+      <a href="study-hub.html">Study Hub</a>
+      <a href="jobs.html">Jobs & Gigs</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+    
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <div class="layout no-sidebar">
+    <!-- FLOATING CONTACT -->
+     
+    <button class="contact-float" id="contactFloat">💬</button>
+    
+    <!-- Contact Modal -->
+     <div class="contact-modal" id="contactModal">
+      <div class="modal-content">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <h3>Contact SmartLife</h3>
+        
+        <form class="contact-form" id="contactForm">
+          <input type="text" name="name" placeholder="Your Full Name" required/>
+          <input type="email" name="email" placeholder="Your Email" required/>
+          <input type="tel" name="tel" placeholder="Your Phone"/>
+          <input type="text" name="institution" placeholder="Your Institution"/>
+          <label for="level">Year of Study</label>
+          <input list="years" name="years" id="year" placeholder="--Select an option--" />
+          <datalist id="years">
+            <option value="1st Year">
+              <option value="2nd Year">
+                <option value="3rd Year">
+                  <option value="4th Year">
+                  </datalist>
+                  <textarea name="message" placeholder="Your Message" required></textarea>
+                  <button type="submit">Send Message</button>
+                  <p class="form-status"></p>
+                </form>
+              </div>
+            </div>
+            
+          <!-- MAIN CONTENT -->
+           <main class="content">
+            <!-- 1️⃣ PAGE INTRO -->
+             <section class="page-header">
+              <h2>About SmartLife</h2>
+              <p>
+                SmartLife is a youth-focused platform dedicated to equipping individuals
+                with practical skills, mentorship, and opportunities to thrive in today’s world.
+              </p>
+            </section>
+            
+            <!-- 2️⃣ MISSION & VISION -->
+             <section class="grid">
+              <div class="box">
+                <h4>🎯 Our Mission</h4>
+                <p>
+                  Our mission is to nurture a generation committed to realizing God's purpose for their lives, 
+                  leveraging their inherent potentials for fulfilment and societal impact.
+                </p>
+              </div>
+              
+              <div class="box">
+                <h4>🌍 Our Vision</h4>
+                <p>
+                  Our vision is to empower individuals to recognize and unlock their inherent potential, ensuring 
+                  they understand their unique role in shaping the world and their generation.
+                </p>
+              </div>
+              
+              <div class="box">
+                <h4>🌱 Purpose</h4>
+                <p>
+                  Our purpose is to inspire and facilitate individuals in their journey towards fulfilling their destinies, 
+                  serving as beacons of hope and catalysts for positive change
+                </p>
+              </div>
+            </section>
+            
+            <section class="gridTwo">
+              <div class="boxTwo">
+                <h4>💡Why SLS exists?</h4>
+                <ul>
+                  <li>Many students enter university without direction</li>
+                  <li>They struggle with transition</li>
+                  <li>They struggle academically</li>
+                  <li>They lack career clarity</li>
+                  <li>They graduate without relevant skills or experience</li>
+                  <li>They show apathy towards leadership roles</li>
+                  <li>Smart Life Solutions (SLS) bridges this gap by providing support,  structure, mentorship, and opportunity</li>
+                </ul>
+              </div>
+            </section>
+            
+            <section class="testimonialss">
+              <h2 class="section-title">What Our Clients Say About Us</h2>
+              <div class="testimonial-wrapper">
+                <button class="nav-btn prev-btn" aria-label="Previous testimonial">
+                  ❮
+                </button>
+                <div class="testimonial-tracks">
+                  <div class="testimonial-cards">
+                    <img src="assets/images/testimonial-images/arthur_david.jpeg" alt="Arthur David">
+                    <h3 class="name">Arthur David.</h3>
+                    <p class="text">
+                      I joined SLS in L100, and that has been one of the smartest and ...
+                    </p>
+                  </div>
+                  <div class="testimonial-cards">
+                    <img src="assets/images/testimonial-images/princess.jpeg" alt="Princess Dasmaani">
+                    <h3 class="name">Princess Dasmaani</h3>
+                    <p class="text">
+                      I've seen a huge difference in my productivity since I joined SLS ...
+                    </p>
+                  </div>
+                  <div class="testimonial-cards">
+                    <img src="assets/images/testimonial-images/paulina.jpeg" alt="Paulina Toudeka">
+                    <h3 class="name">Paulina Toudeka</h3>
+                    <p class="text">
+                      Smart Life Solutions has been extremely helpful to me in many ways ...
+                    </p>
+                  </div>
+                  <div class="testimonial-cards">
+                    <img src="assets/images/testimonial-images/gifty.jpeg" alt="Gifty Armah">
+                    <h3 class="name">Gifty Armah</h3>
+                    <p class="text">
+                      Joining Smart Life Solution (SLS) has been one of the best decisions ...
+                    </p>
+                  </div>
+                  <div class="testimonial-cards">
+                    <img src="assets/images/testimonial-images/rosemary.jpeg" alt="Rosemary Dogbe">
+                    <h3 class="name">Rosemary Dogbe</h3>
+                    <p class="text">
+                      Smart Life has had a positive impact on my academic journey since I joined ...
+                    </p>
+                  </div>
+                  <div class="testimonial-cards">
+                    <img src="assets/images/testimonial-images/harriet.jpeg" alt="Harriet D. Leh">
+                    <h3 class="name">Harriet D. Leh</h3>
+                    <p class="text">
+                      Being part of Smart Life Solutions has been a truly transformative experience ...
+                    </p>
+                  </div>
+                </div>
+                <button class="nav-btn next-btn" aria-label="Next testimonial">
+                  ❯
+                </button>
+              </div>
+                      <a href="testimonials.html" class="stylish-link">See More</a>
+            </section>
+
+
+      <!-- 5️⃣ TEAM SECTION -->
+      <section class="team">
+        <h3>Meet the Team</h3>
+
+        <div class="team-grid">
+          <div class="box team-card">
+            <img src="assets/images/team-images/alex_founder.jpeg" alt="Team member" class="team-img">
+            <h4>Alex Antwi</h4>
+            <p>Founder and Cordinator</p>
+          </div>
+
+          <div class="box team-card">
+            <img src="assets/images/team-images/desmond_schools.jpeg" alt="Team member" class="team-img">
+            <h4>Desmond Dela Addo</h4>
+            <p>President and Schools Cordinator</p>
+          </div>
+
+          <div class="box team-card">
+            <img src="assets/images/team-images/felix_first_vice.jpeg" alt="Team member" class="team-img">
+            <h4>Felix Kusi</h4>
+            <p>First Vice President, Financial Literacy Team Lead and Senior Steward</p>
+          </div>
+
+          <div class="box team-card">
+            <img src="assets/images/team-images/emmanuella_second_vice.jpeg" alt="Team member" class="team-img">
+            <h4>Emmanuella Ohenewaa Adjei</h4>
+            <p>2nd Vice President, Academic Support Team Lead and Senior Steward</p>
+          </div>
+
+          <div class="box team-card">
+            <img src="assets/images/team-images/henritta_secretary.jpeg" alt="Team member" class="team-img">
+            <h4>Henritta Obeng</h4>
+            <p>General Secretary and Senior Steward</p>
+          </div>
+
+          <div class="box team-card">
+            <img src="assets/images/team-images/baafi_financial_controller.jpeg" alt="Team member" class="team-img">
+            <h4>Baafi Asamoah</h4>
+            <p>Financial Controller and Assistant Team Leader</p>
+          </div>
+
+          <div class="box team-card">
+            <img src="assets/images/team-images/joshua_social_media_lead.jpeg" alt="Team member" class="team-img">
+            <h4>Joshua Horlortu</h4>
+            <p>Social Media Team Lead</p>
+          </div>
+
+          <div class="box team-card">
+            <img src="assets/images/team-images/clinton_business.jpeg" alt="Team member" class="team-img">
+            <h4>Clinton Agyekum</h4>
+            <p>Business Unit Lead</p>
+          </div>
+
+          <div class="box team-card">
+            <img src="assets/images/team-images/joshua_peer.jpeg" alt="Team member" class="team-img">
+            <h4>Joshua Zewu</h4>
+            <p>Peer Counsellor and Steward</p>
+          </div>
+
+          <div class="box team-card">
+            <img src="assets/images/team-images/dinah_book_review_lead.jpeg" alt="Team member" class="team-img">
+            <h4>Dinah Adjeiwah Asare</h4>
+            <p>Book Review Team Lead</p>
+          </div>
+
+          <div class="box team-card">
+            <img src="assets/images/team-images/charlcy_book_review_assist.jpeg" alt="Team member" class="team-img">
+            <h4>Charlcy Amo Asante</h4>
+            <p>Book Review Assistant Lead</p>
+          </div>
+
+          <div class="box team-card">
+            <img src="assets/images/team-images/ephraim_academ_excell_assist.jpeg" alt="Team member" class="team-img">
+            <h4>Ephraim Oracca-Tetteh</h4>
+            <p>Academic Excellence Assistant</p>
+          </div>
+
+          <div class="box team-card">
+            <img src="assets/images/team-images/rachael_academic.jpeg" alt="Team member" class="team-img">
+            <h4>Rachael Asare</h4>
+            <p>Academic Support Team Member and Steward</p>
+          </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 SmartLife. All rights reserved.</p>
+
+    <div class="socials">
+      <a href="https://www.facebook.com/share/17zTtps8qu/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/slsghana?igsh=a2YwZGRvdDFydnp3" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/smart-life-solutions-ghana/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-x"></i></a>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/about.js"></script>
+</body>
+</html>

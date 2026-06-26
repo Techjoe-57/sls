@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard | SmartLife</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Place this in your <head> before your script.js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("UkSAZDqrmMplp5IcO"); // Replace with your actual Public Key
+      })();
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+      <h1><a href="index.html">smartlife.com</a></h1>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Dashboard</a>
+        <a href="about.html">About</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="mentorship.html">Mentorship</a>
+        <a href="study-hub.html">Study Hub</a>
+        <a href="jobs.html">Jobs & Gigs</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <!-- ================= MAIN LAYOUT ================= -->
+    <div class="layout no-sidebar">
+      <!-- FLOATING CONTACT -->
+      <button class="contact-float" id="contactFloat">💬</button>
+
+      <!-- Contact Modal -->
+      <div class="contact-modal" id="contactModal">
+        <div class="modal-content">
+          <span class="close-modal" id="closeModal">&times;</span>
+
+          <h3>Contact SmartLife</h3>
+
+          <form class="contact-form" id="contactForm">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Full Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <input type="tel" name="tel" placeholder="Your Phone" />
+            <input
+              type="text"
+              name="institution"
+              placeholder="Your Institution"
+            />
+            <label for="level">Year of Study</label>
+            <input
+              list="years"
+              name="years"
+              id="year"
+              placeholder="--Select an option--"
+            />
+            <datalist id="years">
+              <option value="1st Year"></option>
+              <option value="2nd Year"></option>
+              <option value="3rd Year"></option>
+              <option value="4th Year"></option>
+            </datalist>
+
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+            <p class="form-status"></p>
+          </form>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <main class="content">
+        <section class="simple-slider">
+          <div class="slider-container">
+            <div class="slide active">
+              <img src="assets/images/slide1.jpg" alt="" />
+              <div class="slide-text">
+                <h3>Unlock Your Potential</h3>
+                <p>
+                  SmartLife helps you grow through mentorship and real-world
+                  guidance.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="assets/images/slide2.jpg" alt="" />
+              <div class="slide-text">
+                <h3>Build Skills</h3>
+                <p>
+                  Access curated learning resources and structured study paths.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="assets/images/slide3.jpg" alt="" />
+              <div class="slide-text">
+                <h3>Find Opportunities</h3>
+                <p>Explore jobs, internships and gigs tailored to you.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button class="simple-prev">‹</button>
+          <button class="simple-next">›</button>
+        </section>
+
+        <!-- DASHBOARD GRID -->
+        <section class="grid">
+          <div class="box">
+            <i class="fas fa-book-open icon"></i>
+            <h4>Study Hub</h4>
+            <p>Learning resources & courses.</p>
+          </div>
+
+          <div class="box">
+            <i class="fas fa-handshake icon"></i>
+            <h4>Mentorship</h4>
+            <p>Connect with professionals.</p>
+          </div>
+
+          <div class="box">
+            <i class="fas fa-briefcase icon"></i>
+            <h4>Jobs & Internships</h4>
+            <p>Career opportunities.</p>
+          </div>
+
+          <div class="box">
+            <i class="fas fa-user-friends icon"></i>
+            <h4>Clubs & Groups</h4>
+            <p>Join learning communities.</p>
+          </div>
+
+          <div class="box">
+            <i class="fas fa-toolbox icon"></i>
+            <h4>Resources</h4>
+            <p>Helpful tools & guides.</p>
+          </div>
+
+          <div class="box calendr-widget">
+            <h4>📅 Upcoming Events</h4>
+
+            <ul class="calendar-list">
+              <li data-date="2026-04-14T18:00:00">
+                <span class="date">April 14</span>
+                <span class="event">Mentorship Session</span>
+              </li>
+
+              <li data-date="2026-04-21T18:00:00">
+                <span class="date">April 21</span>
+                <span class="event">Mentorship Session</span>
+              </li>
+
+              <li data-date="2026-04-28T18:00:00">
+                <span class="date">April 28</span>
+                <span class="event">Mentorship Session</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="box countdown-widget">
+            <h4>⏳ Next Event</h4>
+
+            <p class="countdown-title">Live Mentorship Session</p>
+
+            <p id="countdownTimer" class="countdown-time">Loading....</p>
+
+            <a
+              href="https://meet.google.com/ytd-tdom-hgs"
+              target="_blank"
+              class="btn-link"
+            >
+              Join via Google Meet Session →
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      © 2025 SmartLife. All rights reserved.
+      <div class="socials">
+        <a
+          href="https://www.facebook.com/share/17zTtps8qu/?mibextid=wwXIfr"
+          target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/slsghana?igsh=a2YwZGRvdDFydnp3"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/company/smart-life-solutions-ghana/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="#"><i class="fab fa-x"></i></a>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

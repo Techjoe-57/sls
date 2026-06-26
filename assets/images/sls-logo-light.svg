@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="80" viewBox="0 0 360 80" role="img" aria-label="Smart Life Solutions logo (light)">
+  <defs>
+    <style>
+      .brand { font-family: Poppins, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight:700; font-size:28px; fill:#FFFFFF; }
+      .tag   { font-family: Poppins, "Segoe UI", Roboto, Arial, sans-serif; font-weight:600; font-size:12px; fill:#FFFFFF; }
+      .icon-fill { fill:#FFFFFF; }
+    </style>
+  </defs>
+
+  <!-- optional dark rounded background for contrast, remove if you want fully transparent -->
+  <rect x="0" y="0" width="360" height="80" rx="6" fill="transparent"></rect>
+
+  <!-- book icon -->
+  <g transform="translate(8,12)" aria-hidden="true">
+    <rect x="0" y="0" width="34" height="48" rx="4" ry="4" fill="#ffffff" opacity="0.06"></rect>
+    <path d="M2 6c5-2 10-2 15 0v36c-5-2-10-2-15 0V6z" class="icon-fill"></path>
+    <path d="M17 6c5-2 10-2 15 0v36c-5-2-10-2-15 0V6z" class="icon-fill" opacity="0.5"></path>
+    <rect x="3" y="7" width="13" height="1.8" rx="0.8" fill="#000000" opacity="0.02"></rect>
+  </g>
+
+  <!-- text -->
+  <text x="58" y="36" class="brand">Smart Life</text>
+  <text x="58" y="58" class="tag">Solutions</text>
+</svg>

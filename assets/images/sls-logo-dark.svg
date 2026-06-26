@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="80" viewBox="0 0 360 80" role="img" aria-label="Smart Life Solutions logo">
+  <!-- optional: include a webfont (uncomment if you host Poppins locally) -->
+  <!-- <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');</style> -->
+  <defs>
+    <style>
+      .brand { font-family: Poppins, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight:700; font-size:28px; fill:#0B3A66; }
+      .tag   { font-family: Poppins, "Segoe UI", Roboto, Arial, sans-serif; font-weight:600; font-size:12px; fill:#0B3A66; }
+      .icon-fill { fill:#0B3A66; }
+    </style>
+  </defs>
+
+  <!-- book icon (simple) -->
+  <g transform="translate(8,12)" aria-hidden="true">
+    <rect x="0" y="0" width="34" height="48" rx="4" ry="4" class="icon-fill" opacity="0.08"></rect>
+    <path d="M2 6c5-2 10-2 15 0v36c-5-2-10-2-15 0V6z" class="icon-fill"></path>
+    <path d="M17 6c5-2 10-2 15 0v36c-5-2-10-2-15 0V6z" class="icon-fill" opacity="0.6"></path>
+    <rect x="3" y="7" width="13" height="1.8" rx="0.8" fill="#ffffff" opacity="0.2"></rect>
+  </g>
+
+  <!-- text -->
+  <text x="58" y="36" class="brand">Smart Life</text>
+  <text x="58" y="58" class="tag">Solutions</text>
+</svg>

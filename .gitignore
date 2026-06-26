@@ -1,0 +1,11 @@
+# Files excluded from being pushed to GitHub
+# All Zone.Indetifier files
+*.Identifier
+# All System files
+*.db
+# Node Modules
+/node_modules
+
+# Node packages
+package-lock.json
+package.json

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | SmartLife</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/testimonials.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("UkSAZDqrmMplp5IcO"); // Public Key for EmailJS
+      })();
+    </script>
+</head>
+<body>
+    
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h1><a href="index.html">smartlife.com</a></h1>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Dashboard</a>
+      <a href="about.html">About</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="mentorship.html">Mentorship</a>
+      <a href="study-hub.html">Study Hub</a>
+      <a href="jobs.html">Jobs & Gigs</a>
+      <a href="testimonials.html" class="active">Testimonials</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+    
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <div class="layout no-sidebar">
+    <!-- FLOATING CONTACT -->
+ <button class="contact-float" id="contactFloat">💬</button>
+
+ <!-- Contact Modal -->
+  <div class="contact-modal" id="contactModal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">&times;</span>
+
+      <h3>Contact SmartLife</h3>
+      
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Your Full Name" required/>
+        <input type="email" name="email" placeholder="Your Email" required/>
+        <input type="tel" name="tel" placeholder="Your Phone"/>
+        <input type="text" name="institution" placeholder="Your Institution"/>
+        <label for="level">Year of Study</label>
+        <input list="years" name="years" id="year" placeholder="--Select an option--" />
+        <datalist id="years">
+          <option value="1st Year">
+          <option value="2nd Year">
+          <option value="3rd Year">
+          <option value="4th Year">
+        </datalist>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <p class="form-status"></p>
+      </form>
+      </div>
+  </div>
+
+  <!-- MAIN CONTENT
+   <main class="content">
+
+   <!-- 4️⃣ FULL TESTIMONIALS (JSON-DRIVEN) -->
+      <!-- <section class="testimonials">
+        <h3>What People Say About SmartLife</h3>
+
+        <div class="testimonial-carousel">
+          <button class="carousel-btn prev">‹</button>
+
+          <div class="testimonial-track" id="testimonialTrack"> -->
+            <!-- Loaded from testimonials.json -->
+          <!-- </div>
+
+          <button class="carousel-btn next">›</button>
+        </div>
+      </section>
+    </main> --> 
+    <main class="testimonials-page">
+
+    <!-- HERO -->
+    <section class="testimonial-hero">
+
+      <h1>
+        What Students Say About SmartLife
+      </h1>
+
+      <p>
+        Real experiences from students using SmartLife
+        to improve productivity and academic success.
+      </p>
+
+    </section>
+
+    <!-- FEATURED CAROUSEL -->
+    <section class="featured-testimonial">
+
+      <!-- <div class="testimonial-carousel">
+
+        <button class="carousel-btn prev">‹</button>
+
+        <div class="testimonial-track" id="testimonialTrack"> -->
+          <!-- Injected from JS -->
+        <!-- </div>
+
+        <button class="carousel-btn next">›</button>
+
+      </div>
+
+    </section> -->
+
+    <!-- GRID -->
+    <section class="testimonial-grid" id="testimonialGrid">
+      <!-- Injected from JS -->
+    </section>
+
+  </main>
+    <!-- FOOTER -->
+     <footer>
+        <p>© 2025 SmartLife. All rights reserved.</p>
+        <div class="socials">
+            <a href="https://www.facebook.com/share/17zTtps8qu/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/slsghana?igsh=a2YwZGRvdDFydnp3" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/smart-life-solutions-ghana/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-x"></i></a>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/testimonials.js"></script>
+</body>
+</html>
