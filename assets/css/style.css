@@ -325,233 +325,54 @@ footer {
   color: var(--muted);
 }
 
-/* =========================
-   TESTIMONIALS
-========================= */
-
-/* .testimonials {
-  background: var(--testimonial-bg);
-  padding: 80px 50px;
-  border-radius: 20px;
-  transition: background var(--transition-speed) ease;
-}
-
-.testimonials h3 {
-  text-align: center;
-  font-size: 48px;
-  font-weight: 800;
-  margin-bottom: 60px;
-  color: var(--testimonial-heading);
-  text-transform: uppercase;
-} */
-
-/* Carousel */
-/* .testimonial-carousel {
-  position: relative;
-  overflow: hidden;
-} */
-
-/* Track */
-/* .testimonial-track {
-  display: flex;
-  transition: transform 0.6s ease-in-out;
-} */
-
-/* CARD */
-/* .testimonial-card {
-  min-width: 100%;
-
-  display: grid;
-  grid-template-columns: 420px 1fr;
-  gap: 60px;
-  align-items: center;
-
-  padding: 20px 40px;
-  box-sizing: border-box;
-} */
-
-/* LEFT */
-/* .testimonial-left {
-  display: flex;
-  justify-content: center;
-}
-
-.testimonial-left img {
-  width: 100%;
-  max-width: 420px;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 20px;
-} */
-
-/* RIGHT */
-/* .testimonial-right {
-  display: flex;
-  flex-direction: column;
-} */
-
-/* Quote */
-/* .quote-icon {
-  width: 70px;
-  height: 70px;
-
-  background: var(--quote-bg);
-  color: white;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-
-  font-size: 32px;
-  margin-bottom: 30px;
-} */
-
-/* Text */
-/* .testimonial-message {
-  font-size: 32px;
-  line-height: 1.4;
-  font-weight: 700;
-
-  color: var(--testimonial-text);
-
-  margin-bottom: 40px;
-
-  max-width: 900px;
-
-  transition: color var(--transition-speed) ease;
-} */
-
-/* Footer */
-/* .testimonial-footer {
-  border-top: 1px solid var(--testimonial-border);
-  padding-top: 20px;
-}
-
-.testimonial-footer strong {
-  font-size: 22px;
-  color: var(--testimonial-heading);
-}
-
-.testimonial-footer small {
-  font-size: 16px;
-  color: var(--muted);
-} */
-
-/* Buttons */
-/* .carousel-btn {
-  position: absolute;
-  bottom: 20px;
-
-  background: transparent;
-  border: none;
-
-  font-size: 45px;
-
-  color: var(--arrow-color);
-
-  cursor: pointer;
-
-  transition: 0.3s ease;
-
-  z-index: 5;
-} */
-
-/* .carousel-btn:hover {
-  color: var(--arrow-hover);
-}
-
-.carousel-btn.prev {
-  left: 48%;
-  transform: translateX(-60px);
-}
-
-.carousel-btn.next {
-  left: 52%;
-} */
-/*end*/
-
-/*TESTIMONIAL RESPONSIVENESS*/
-/* @media (max-width: 900px) {
-
-  .testimonial-card {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .testimonial-left img {
-    height: 350px;
-  }
-
-  .testimonial-right {
-    align-items: center;
-  }
-
-  .testimonial-message {
-    font-size: 22px;
-  }
-
-  .testimonials h3 {
-    font-size: 32px;
-  }
-
-  .carousel-btn.prev {
-    left: 40%;
-  }
-
-  .carousel-btn.next {
-    left: 55%;
-  }
-} */
-/*end*/
-
-
-/*KEEP*/
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-/*KEEP*/
-.contact-form label {
-  font-size: 13px;
-  color: var(--muted);
-}
-/*KEEP*/
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid var(--input-border);
-  background: var(--input-bg);
-  color: var(--text);
-  font-size: 14px;
-}
-/*KEEP*/
-.contact-form button {
-  background: #0f2a44;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  margin-top: 6px;
-}
-/*KEEP*/
-.contact-form button:hover {
-  background: #163c63;
-}
-
-/* HIGHLIGHTS SECTION */
-/* SIMPLE SLIDER */
+/*AUTO SLIDER ON INDEX PAGE*/
+/* Ensure the slider section relative coordinates work */
 .simple-slider {
   position: relative;
-  margin-bottom: 30px;
-  width: 100%;
+  touch-action: pan-y; /* Allows normal vertical scrolling, intercepts horizontal swipes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* margin-bottom: 30px;
+  width: 100%; */
 }
+
+/* Container for the dots */
+.slider-dots {
+  position: relative;
+  /* bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%); */
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+  padding-bottom: 10px;
+}
+
+/* Individual dot styles */
+.slider-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+}
+
+/* Filled styling for the active dot */
+.slider-dot.active {
+  background-color: #333333;
+  transform: scale(1.2);
+}
+
+/* Subtle feedback when hovering over a dot */
+.slider-dot:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 
 /* Container */
 .slider-container {
@@ -623,6 +444,50 @@ footer {
 .simple-next:hover {
   background: #163c63;
 }
+
+/*END OF NEW ADDITION*/
+
+
+
+/*KEEP*/
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+/*KEEP*/
+.contact-form label {
+  font-size: 13px;
+  color: var(--muted);
+}
+/*KEEP*/
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--input-border);
+  background: var(--input-bg);
+  color: var(--text);
+  font-size: 14px;
+}
+/*KEEP*/
+.contact-form button {
+  background: #0f2a44;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 6px;
+}
+/*KEEP*/
+.contact-form button:hover {
+  background: #163c63;
+}
+
+/* HIGHLIGHTS SECTION */
 
 .menu-toggle {
   display: none;
