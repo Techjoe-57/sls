@@ -12,7 +12,7 @@ if (localStorage.getItem("theme") === "dark") {
 btn?.addEventListener("click", () => {
   const isDark = document.body.classList.toggle("dark");
   
-  // Save the preference and swap the icon
+  // Saves the preference and swaps the icon
   localStorage.setItem("theme", isDark ? "dark" : "light");
   btn.textContent = isDark ? "☀️" : "🌙"; 
 });
